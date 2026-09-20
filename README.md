@@ -26,6 +26,8 @@ The pipeline:
 - Google BigQuery
 - GDELT
 - Trafilatura
+- langdetect
+- JSON
 
 ## Project
 
