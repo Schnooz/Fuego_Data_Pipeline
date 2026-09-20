@@ -1,4 +1,4 @@
-# Fuego_Data_Pipeline
+# News Pulse Data Pipeline
 
 Data preprocessing pipeline for the SteelHacks 2026 project participating in Xtract and Nemotron tracks. 
 
@@ -9,13 +9,15 @@ and prepares article data for downstream analysis and LLM processing.
 
 The pipeline:
 
-1. Queries GDELT data using BigQuery
+1. Queries GDELT data using Google BigQuery
 2. Filters articles by geographic location and publication date
 3. Extracts article titles and metadata
 4. Uses Trafilatura to retrieve and extract main article text
-5. Filters articles based on successful extraction and minimum word count
-6. Splits the resulting dataset by publication date
-7. Exports daily datasets as JSON
+5. Filters out articles that cannot be successfully extracted or contain fewer than 300 words
+6. Removes duplicate articles
+7. Filters the dataset to English-language articles
+8. Splits the resulting dataset by publication date
+9. Exports daily datasets as JSON
 
 ## Technologies
 
@@ -33,4 +35,4 @@ Developed as part of SteelHacks 2026.
 
 ChatGPT (OpenAI) was used as a coding assistant during development, primarily
 for debugging, explaining Python/Pandas concepts, and refining data-processing
-functions. All code was reviewed and adapted by the project team.
+functions.
