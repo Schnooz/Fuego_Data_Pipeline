@@ -28,3 +28,9 @@ The pipeline:
 ## Project
 
 Developed as part of SteelHacks 2026.
+
+## AI Assistance
+
+ChatGPT (OpenAI) was used as a coding assistant during development, primarily
+for debugging, explaining Python/Pandas concepts, and refining data-processing
+functions. All code was reviewed and adapted by the project team.
